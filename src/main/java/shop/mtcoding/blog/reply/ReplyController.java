@@ -17,6 +17,7 @@ public class ReplyController {
     private final ReplyService replyService;
     private final HttpSession session;
 
+
     @DeleteMapping("/api/replies/{id}")
     public ResponseEntity<?> delete(@PathVariable Integer id){
         User sessionUser = (User) session.getAttribute("sessionUser");
