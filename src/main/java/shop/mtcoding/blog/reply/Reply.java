@@ -15,6 +15,7 @@ import java.sql.Timestamp;
 @Table(name = "reply_tb")
 @Entity
 public class Reply {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
